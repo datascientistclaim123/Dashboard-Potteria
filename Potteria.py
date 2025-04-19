@@ -5,7 +5,7 @@ import plotly.express as px
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_excel(r"C:\Users\NIV\Downloads\Data Dummy Potteria.xlsx")
+    df = pd.read_excel("Data Dummy Potteria.xlsx")
     df["Tanggal"] = pd.to_datetime(df["Tanggal"])
     df["Bulan"] = df["Tanggal"].dt.to_period("M")
 
