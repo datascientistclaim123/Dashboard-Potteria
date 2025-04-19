@@ -117,7 +117,7 @@ elif selected_page == "Report Pengeluaran PT MBA":
     df_mba = df[df["PT"].str.upper() == pt_target.upper()]
 
     # Sidebar - Filter tanggal
-    st.sidebar.header("Filter Bulan")
+    st.sidebar.header("Filter Periode")
     min_date = df_mba["Tanggal"].min()
     max_date = df_mba["Tanggal"].max()
 
