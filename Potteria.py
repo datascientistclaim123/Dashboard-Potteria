@@ -121,8 +121,8 @@ elif selected_page == "Report Pengeluaran PT MBA":
     min_date = df_mba["Tanggal"].min()
     max_date = df_mba["Tanggal"].max()
 
-    start_month = st.sidebar.date_input("Dari Bulan", min_value=min_date, value=min_date)
-    end_month = st.sidebar.date_input("Sampai Bulan", max_value=max_date, value=max_date)
+    start_month = st.sidebar.date_input("Dari Tanggal", min_value=min_date, value=min_date)
+    end_month = st.sidebar.date_input("Sampai Tanggal", max_value=max_date, value=max_date)
 
     # Konversi ke datetime untuk filtering
     start_month = pd.to_datetime(start_month)
